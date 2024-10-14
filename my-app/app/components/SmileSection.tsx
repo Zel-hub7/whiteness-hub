@@ -43,7 +43,7 @@ const SmileSection: React.FC = () => {
             <img
               src="https://konzept-weiss.de/cdn/shop/files/konzept_weiss-website_laechelnde_Frau_488xpng.webp?v=1711024996"
               alt="Smiling Woman"
-              className="w-full rounded-lg shadow-md"
+              className="w-[400px] rounded-lg shadow-md"
             />
           </div>
 
