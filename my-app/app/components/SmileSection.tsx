@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const SmileSection: React.FC = () => {
   return (
@@ -49,18 +49,26 @@ const SmileSection: React.FC = () => {
 
           {/* Text Content */}
           <div className="text-gray-900 p-8 rounded-lg shadow-md">
-            <h3 className="text-green-600 font-bold uppercase mb-4">Unique Konzept Weiss Method</h3>
+            <h3 className="text-green-600 font-bold uppercase mb-4">
+              Unique Konzept Weiss Method
+            </h3>
             <h2 className="text-3xl font-bold mb-6">Please Smile! 😄</h2>
             <p className="text-lg leading-relaxed mb-6">
-              A beautiful, white smile – and all without painful treatment? We want to make that possible for you. KONZEPT WEISS®
-              forgoes the use of hydrogen peroxide in its tooth-whitening method, thus avoiding pain and side effects. Our tried and
-              tested method brightens your teeth gently, ensuring long-lasting results. So, you can relax and leave your worries behind
-              as our experts help you achieve the smile of your dreams.
+              A beautiful, white smile – and all without painful treatment? We
+              want to make that possible for you. KONZEPT WEISS® forgoes the use
+              of hydrogen peroxide in its tooth-whitening method, thus avoiding
+              pain and side effects. Our tried and tested method brightens your
+              teeth gently, ensuring long-lasting results. So, you can relax and
+              leave your worries behind as our experts help you achieve the
+              smile of your dreams.
             </p>
             <p className="text-lg leading-relaxed">
-              If you still have further questions or concerns, please contact our support team or visit one of our stores. Our staff
-              will gladly answer all your personal questions on-site. You can also find additional information on our website in the FAQ
-              section, where frequently asked questions are addressed and any uncertainties are clarified.
+              If you still have further questions or concerns, please contact
+              our support team or visit one of our stores. Our staff will gladly
+              answer all your personal questions on-site. You can also find
+              additional information on our website in the FAQ section, where
+              frequently asked questions are addressed and any uncertainties are
+              clarified.
             </p>
           </div>
         </div>
@@ -68,8 +76,8 @@ const SmileSection: React.FC = () => {
         {/* New Section - Testimonials and Content */}
         <div className="mt-16 text-center">
           {/* Title */}
-          <h2 className="text-4xl font-bold mb-2">Hey, noch nicht überzeugt?</h2>
-          <p className="text-lg mb-8">Schau Dir diese mega Ergebnisse an!</p>
+          <h2 className="text-4xl font-bold mb-2">Hey, not convinced yet?</h2>
+          <p className="text-lg mb-8">Check out these amazing results!</p>
 
           {/* Image Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
@@ -99,18 +107,29 @@ const SmileSection: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 p-8 bg-white shadow-md rounded-lg">
             {/* Left side - Big title */}
             <div className="text-left">
-              <h3 className="text-3xl font-bold">3 BLEACHING Pakete - Du hast die Wahl</h3>
+              <h3 className="text-3xl font-bold">
+                3 WHITENING Packages - You have the choice
+              </h3>
               <p className="text-green-600 mt-4">
-                Finde die passende Behandlung für Dein neues, weißes Lächeln!
+                Find the right treatment for your new, white smile!
               </p>
             </div>
 
             {/* Right side - Explanation */}
             <div className="text-left border-l-2 border-green-500 pl-8">
               <p className="text-lg leading-relaxed">
-                Jedes Lächeln ist unterschiedlich – und somit auch jede Bleachingbehandlung. Um für Dich das bestmögliche Ergebnis zu erzielen, erhältst Du bei Deinem Besuch in unseren Stores immer ein individuelles Beratungsgespräch durch unsere Expert:innen. Dies ermöglicht die Auswahl des idealen Behandlungspaketes für Dich und die Beantwortung Deiner Fragen. Auf unserer FAQ Seite findest Du vorab einige Fragen und Antworten zur Behandlung und Zahnaufhellung.
+                Every smile is different – and so is every whitening treatment.
+                To achieve the best possible result for you, you will always
+                receive a personalized consultation from our experts during your
+                visit to our stores. This allows the selection of the ideal
+                treatment package for you and answers to your questions. On our
+                FAQ page, you can find some preliminary questions and answers
+                about the treatment and teeth whitening.
               </p>
-              <a href="#" className="text-green-600 font-semibold mt-4 block">Mehr erfahren</a>
+
+              <a href="#" className="text-green-600 font-semibold mt-4 block">
+                Learn More
+              </a>
             </div>
           </div>
         </div>

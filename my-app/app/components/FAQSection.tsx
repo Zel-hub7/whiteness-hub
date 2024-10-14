@@ -1,6 +1,6 @@
 "use client"; // Add this at the top of the file
 
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const FAQSection: React.FC = () => {
   // State to track which FAQ is currently expanded
@@ -17,17 +17,33 @@ const FAQSection: React.FC = () => {
 
   // List of FAQs
   const faqs = [
-    { question: 'Gibt es Nebenwirkungen?', answer: 'Nein, es gibt keine bekannten Nebenwirkungen.' },
-    { question: 'Ist eine professionelle Zahnaufhellung notwendig?', answer: 'Ja, professionelle Zahnaufhellung liefert bessere Ergebnisse als DIY-Produkte.' },
-    { question: 'Können Kronen, Brücken, Füllungen oder Veneers aufgehellt werden?', answer: 'Nein, diese Materialien können durch Bleaching nicht aufgehellt werden.' },
-    { question: 'Wie hell können meine Zähne werden?', answer: 'Die Zähne können um mehrere Nuancen aufgehellt werden, abhängig von der aktuellen Zahnfarbe.' },
+    {
+      question: "Are there any side effects?",
+      answer: "No, there are no known side effects.",
+    },
+    {
+      question: "Is professional teeth whitening necessary?",
+      answer:
+        "Yes, professional teeth whitening provides better results than DIY products.",
+    },
+    {
+      question: "Can crowns, bridges, fillings, or veneers be whitened?",
+      answer: "No, these materials cannot be whitened through bleaching.",
+    },
+    {
+      question: "How white can my teeth get?",
+      answer:
+        "Teeth can be whitened by several shades, depending on the current tooth color.",
+    },
   ];
 
   return (
     <div className="bg-gray-100 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* FAQ Title */}
-        <h2 className="text-3xl font-bold mb-8 text-center">Deine Fragen. Unsere Antworten.</h2>
+        <h2 className="text-3xl font-bold mb-8 text-center">
+          Your Questions. Our Answers.
+        </h2>
 
         {/* FAQ Items */}
         <div className="bg-white rounded-lg shadow-md p-6">
@@ -38,7 +54,9 @@ const FAQSection: React.FC = () => {
                 onClick={() => toggleFAQ(index)}
               >
                 <h3 className="text-lg font-medium">{faq.question}</h3>
-                <span className="text-xl">{openIndex === index ? '-' : '+'}</span>
+                <span className="text-xl">
+                  {openIndex === index ? "-" : "+"}
+                </span>
               </div>
               {openIndex === index && (
                 <p className="text-gray-600 mt-2">{faq.answer}</p>
@@ -50,8 +68,10 @@ const FAQSection: React.FC = () => {
         {/* Product Section with Images */}
         <div className="mt-16 text-center">
           {/* Title */}
-          <h2 className="text-4xl font-bold mb-2">Verlängere Dein Bleachingergebnis</h2>
-          <p className="text-lg mb-8">Entdecke unsere Pflegeprodukte</p>
+          <h2 className="text-4xl font-bold mb-2">
+            Extend Your Whitening Results
+          </h2>
+          <p className="text-lg mb-8">Discover our care products</p>
 
           {/* Product Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
@@ -59,16 +79,21 @@ const FAQSection: React.FC = () => {
             <div className="bg-green-100 p-6 rounded-lg text-center shadow-md flex flex-col justify-between">
               <img
                 src="https://konzept-weiss.de/cdn/shop/files/COLOURCORRECTOR-removebg-preview.png?v=1705600089"
-                alt="Sonic Zahnbürste"
+                alt="Sonic Toothbrush"
                 className="w-24 h-auto mx-auto mb-4"
               />
               <div className="flex-grow">
-                <h3 className="text-xl font-bold mb-4">SONIC+ ELEKTRISCHE SCHALLZAHNBÜRSTE 2.0</h3>
+                <h3 className="text-xl font-bold mb-4">
+                  SONIC+ ELECTRIC SONIC TOOTHBRUSH 2.0
+                </h3>
                 <p className="text-gray-600 mb-4">
-                  Die Sonic Schallzahnbürste 2.0 bietet Dir 5 Modi zur schonenden und effektiven Reinigung Deiner Zähne.
+                  The Sonic Sonic Toothbrush 2.0 offers you 5 modes for gentle
+                  and effective cleaning of your teeth.
                 </p>
               </div>
-              <button className="bg-green-500 text-white px-4 py-2 rounded-lg mt-auto">MEHR ERFAHREN</button>
+              <button className="bg-green-500 text-white px-4 py-2 rounded-lg mt-auto">
+                LEARN MORE
+              </button>
             </div>
 
             {/* Card 2 */}
@@ -81,10 +106,13 @@ const FAQSection: React.FC = () => {
               <div className="flex-grow">
                 <h3 className="text-xl font-bold mb-4">PREMIUM CARE BUNDLE+</h3>
                 <p className="text-gray-600 mb-4">
-                  Entdecke unser PREMIUM CARE BUNDLE+ mit hochmoderner Schallzahnbürste und Whitening-Produkten.
+                  Discover our PREMIUM CARE BUNDLE+ with advanced sonic
+                  toothbrush and whitening products.
                 </p>
               </div>
-              <button className="bg-green-500 text-white px-4 py-2 rounded-lg mt-auto">MEHR ERFAHREN</button>
+              <button className="bg-green-500 text-white px-4 py-2 rounded-lg mt-auto">
+                LEARN MORE
+              </button>
             </div>
 
             {/* Card 3 */}
@@ -97,10 +125,13 @@ const FAQSection: React.FC = () => {
               <div className="flex-grow">
                 <h3 className="text-xl font-bold mb-4">CC+ COLOUR CORRECTOR</h3>
                 <p className="text-gray-600 mb-4">
-                  Der CC+ Colour Corrector neutralisiert Verfärbungen auf Deinen Zähnen und bringt neuen Glanz.
+                  The CC+ Colour Corrector neutralizes discoloration on your
+                  teeth and brings new shine.
                 </p>
               </div>
-              <button className="bg-green-500 text-white px-4 py-2 rounded-lg mt-auto">MEHR ERFAHREN</button>
+              <button className="bg-green-500 text-white px-4 py-2 rounded-lg mt-auto">
+                LEARN MORE
+              </button>
             </div>
 
             {/* Card 4 */}
@@ -111,28 +142,37 @@ const FAQSection: React.FC = () => {
                 className="w-24 h-auto mx-auto mb-4"
               />
               <div className="flex-grow">
-                <h3 className="text-xl font-bold mb-4">PREMIUM WHITENING ZAHNCREME+</h3>
+                <h3 className="text-xl font-bold mb-4">
+                  PREMIUM WHITENING TOOTHPASTE+
+                </h3>
                 <p className="text-gray-600 mb-4">
-                  Unsere Aktivkohle Zahnpasta, ganz ohne Fluorid! Aufhellung nach wenigen Anwendungen.
+                  Our activated charcoal toothpaste, fluoride-free! Whitening
+                  after just a few uses.
                 </p>
               </div>
-              <button className="bg-green-500 text-white px-4 py-2 rounded-lg mt-auto">MEHR ERFAHREN</button>
+              <button className="bg-green-500 text-white px-4 py-2 rounded-lg mt-auto">
+                LEARN MORE
+              </button>
             </div>
 
             {/* Card 5 */}
             <div className="bg-green-100 p-6 rounded-lg text-center shadow-md flex flex-col justify-between">
               <img
                 src="https://konzept-weiss.de/cdn/shop/files/COLOURCORRECTOR-removebg-preview.png?v=1705600089"
-                alt="Coco Crush Zahnpasta"
+                alt="Coco Crush Toothpaste"
                 className="w-24 h-auto mx-auto mb-4"
               />
               <div className="flex-grow">
-                <h3 className="text-xl font-bold mb-4">COCO CRUSH ZAHNCREME</h3>
+                <h3 className="text-xl font-bold mb-4">
+                  COCO CRUSH TOOTHPASTE
+                </h3>
                 <p className="text-gray-600 mb-4">
-                  Hol Dir jetzt den exotischen Geschmack von Coco Crush nach Hause und lass Dich verwöhnen!
+                  Bring the exotic taste of Coco Crush home and treat yourself!
                 </p>
               </div>
-              <button className="bg-green-500 text-white px-4 py-2 rounded-lg mt-auto">MEHR ERFAHREN</button>
+              <button className="bg-green-500 text-white px-4 py-2 rounded-lg mt-auto">
+                LEARN MORE
+              </button>
             </div>
           </div>
         </div>
