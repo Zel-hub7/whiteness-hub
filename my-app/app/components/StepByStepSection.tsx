@@ -1,4 +1,4 @@
-"use client"; // Add this line at the top
+"use client";
 
 import React, { useState } from 'react';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'; // Using react-icons for arrows
@@ -9,37 +9,37 @@ const StepByStepSection: React.FC = () => {
   const steps = [
     {
       id: 1,
-      title: 'Consultation On-Site',
+      title: 'Beratung Vor Ort',
       description:
-        'Together with one of our WEISS experts, you will find out which package best suits you and your teeth. The consultation is tailored individually to you, and based on the current tooth color, you can decide which bleaching package meets your expectations and desires. All your personal questions will be answered here.',
+        'Gemeinsam mit einem unserer WEISS-Experten finden Sie heraus, welches Paket am besten zu Ihnen und Ihren Zähnen passt. Die Beratung wird individuell auf Sie zugeschnitten, und basierend auf der aktuellen Zahnfarbe können Sie entscheiden, welches Bleaching-Paket Ihre Erwartungen und Wünsche erfüllt. Alle Ihre persönlichen Fragen werden hier beantwortet.',
       icon: '🖥️',
     },
     {
       id: 2,
-      title: 'Determination of Tooth Shade',
+      title: 'Bestimmung des Zahnfarbtons',
       description:
-        'We determine your tooth shade to ensure the bleaching treatment meets your needs.',
+        'Wir bestimmen Ihren Zahnfarbton, um sicherzustellen, dass die Bleaching-Behandlung Ihren Bedürfnissen entspricht.',
       icon: '🦷',
     },
     {
       id: 3,
-      title: 'Tooth Whitening (Bleaching)',
+      title: 'Zahnaufhellung (Bleaching)',
       description:
-        'We carry out the bleaching treatment to give you a brighter smile.',
+        'Wir führen die Bleaching-Behandlung durch, um Ihnen ein strahlenderes Lächeln zu verleihen.',
       icon: '🦷',
     },
     {
       id: 4,
-      title: 'Result Check',
+      title: 'Ergebnisprüfung',
       description:
-        'We review the results of your treatment to ensure satisfaction.',
+        'Wir überprüfen die Ergebnisse Ihrer Behandlung, um sicherzustellen, dass Sie zufrieden sind.',
       icon: '✅',
     },
     {
       id: 5,
-      title: 'Refresh Card',
+      title: 'Auffrischungskarte',
       description:
-        'After 3 months, come back for a refresh to maintain your new smile.',
+        'Nach 3 Monaten kommen Sie für eine Auffrischung zurück, um Ihr neues Lächeln zu erhalten.',
       icon: '💳',
     },
   ];
@@ -57,12 +57,14 @@ const StepByStepSection: React.FC = () => {
   };
 
   return (
-    <div className="bg-gray-100 py-16">
+    <div className="bg-gray-900 py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Title */}
-        <h2 className="text-4xl font-bold mb-4">Step By Step to Your KONZEPT WEISS Smile</h2>
-        <p className="text-lg mb-12">
-          In just 5 steps to a bright white smile – it’s that easy to fulfill your dream of whiter teeth with us.
+        <h2 className="text-5xl font-bold text-white mb-8">
+          Schritt für Schritt zu Ihrem KONZEPT WEISS Lächeln
+        </h2>
+        <p className="text-xl text-gray-300 mb-12 max-w-3xl mx-auto">
+          In nur 5 Schritten zu einem strahlend weißen Lächeln – so einfach ist es, Ihren Traum von weißen Zähnen mit uns zu erfüllen.
         </p>
 
         {/* Arrows and Step Content */}
@@ -70,7 +72,7 @@ const StepByStepSection: React.FC = () => {
           {/* Left Arrow */}
           <button
             onClick={handlePrevious}
-            className={`absolute left-0 top-1/2 transform -translate-y-1/2 p-2 rounded-full bg-black text-white ${
+            className={`absolute left-0 top-1/2 transform -translate-y-1/2 p-4 rounded-full bg-gray-700 text-white ${
               activeStep === 1 ? 'opacity-50 cursor-not-allowed' : ''
             }`}
             disabled={activeStep === 1}
@@ -85,12 +87,12 @@ const StepByStepSection: React.FC = () => {
                 key={step.id}
                 className={`${
                   step.id === activeStep ? 'block' : 'hidden'
-                } bg-black p-6 rounded-lg shadow-md text-white w-full max-w-md`}
+                } bg-gradient-to-br from-gray-800 via-gray-700 to-black p-8 rounded-lg shadow-lg text-white w-full max-w-lg transform transition-transform hover:scale-105`}
               >
-                <p className="text-3xl font-bold text-gray-200">{`0${step.id}`}</p>
-                <p className="text-lg font-semibold my-2">{step.title}</p>
-                <p className="text-md my-2">{step.description}</p>
-                <span className="text-green-500 text-2xl">{step.icon}</span>
+                <p className="text-4xl font-bold text-green-400">{`0${step.id}`}</p>
+                <p className="text-2xl font-semibold my-4">{step.title}</p>
+                <p className="text-lg mb-6">{step.description}</p>
+                <span className="text-green-500 text-3xl">{step.icon}</span>
               </div>
             ))}
           </div>
@@ -98,7 +100,7 @@ const StepByStepSection: React.FC = () => {
           {/* Right Arrow */}
           <button
             onClick={handleNext}
-            className={`absolute right-0 top-1/2 transform -translate-y-1/2 p-2 rounded-full bg-black text-white ${
+            className={`absolute right-0 top-1/2 transform -translate-y-1/2 p-4 rounded-full bg-gray-700 text-white ${
               activeStep === steps.length ? 'opacity-50 cursor-not-allowed' : ''
             }`}
             disabled={activeStep === steps.length}
@@ -113,19 +115,19 @@ const StepByStepSection: React.FC = () => {
             <div
               key={step.id}
               className={`p-4 rounded-lg shadow-md cursor-pointer ${
-                step.id === activeStep ? 'bg-white text-black' : 'bg-gray-200 text-gray-500'
+                step.id === activeStep ? 'bg-green-500 text-white' : 'bg-gray-200 text-gray-500'
               }`}
               onClick={() => setActiveStep(step.id)}
             >
-              <p className="text-lg">{`0${step.id}`}</p>
+              <p className="text-xl">{`0${step.id}`}</p>
             </div>
           ))}
         </div>
 
         {/* Button */}
         <div className="mt-12">
-          <button className="bg-black text-white px-6 py-3 font-semibold rounded-lg hover:bg-gray-800 transition duration-300">
-            Book an Appointment
+          <button className="bg-green-500 text-white px-8 py-4 font-semibold rounded-lg hover:bg-green-600 transition duration-300">
+            Termin buchen
           </button>
         </div>
       </div>
