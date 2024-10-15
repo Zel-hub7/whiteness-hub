@@ -37,38 +37,36 @@ const SmileSection: React.FC = () => {
         </div>
 
         {/* Image and Text Section */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center bg-gradient-to-b from-white to-gray-100 p-4 lg:p-8 rounded-lg">
           {/* Image */}
-          <div>
+          <div className="flex justify-center lg:justify-end">
             <img
               src="https://konzept-weiss.de/cdn/shop/files/konzept_weiss-website_laechelnde_Frau_488xpng.webp?v=1711024996"
               alt="Smiling Woman"
-              className="w-[400px] rounded-lg shadow-md"
+              className="w-[280px] sm:w-[350px] lg:w-[400px] rounded-lg shadow-lg transform transition duration-300 hover:scale-105"
             />
           </div>
 
           {/* Text Content */}
-          <div className="text-gray-900 p-8 rounded-lg shadow-md">
-            <h3 className="text-green-600 font-bold uppercase mb-4">
+          <div className="bg-white p-6 lg:p-8 rounded-lg shadow-lg transform transition duration-300 hover:shadow-2xl">
+            <h3 className="text-green-600 font-bold uppercase mb-4 text-center lg:text-left">
               Unique Konzept Weiss Method
             </h3>
-            <h2 className="text-3xl font-bold mb-6">Please Smile! 😄</h2>
-            <p className="text-lg leading-relaxed mb-6">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-center lg:text-left text-gray-800">
+              Please Smile! 😄
+            </h2>
+            <p className="text-base sm:text-lg leading-relaxed mb-6 text-gray-700">
               A beautiful, white smile – and all without painful treatment? We
               want to make that possible for you. KONZEPT WEISS® forgoes the use
               of hydrogen peroxide in its tooth-whitening method, thus avoiding
               pain and side effects. Our tried and tested method brightens your
-              teeth gently, ensuring long-lasting results. So, you can relax and
-              leave your worries behind as our experts help you achieve the
-              smile of your dreams.
+              teeth gently, ensuring long-lasting results.
             </p>
-            <p className="text-lg leading-relaxed">
+            <p className="text-base sm:text-lg leading-relaxed text-gray-700">
               If you still have further questions or concerns, please contact
               our support team or visit one of our stores. Our staff will gladly
               answer all your personal questions on-site. You can also find
-              additional information on our website in the FAQ section, where
-              frequently asked questions are addressed and any uncertainties are
-              clarified.
+              additional information on our website in the FAQ section.
             </p>
           </div>
         </div>
@@ -80,26 +78,26 @@ const SmileSection: React.FC = () => {
           <p className="text-lg mb-8">Check out these amazing results!</p>
 
           {/* Image Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
             <img
               src="https://konzept-weiss.de/cdn/shop/files/konzept_weiss-website_Kunde2_291x_5ac920e3-6ae9-4a7f-8dba-1fb05607eb3b.png?v=1666955683"
               alt="Client 1"
-              className="rounded-lg shadow-md"
+              className="rounded-lg shadow-md w-3/4 mx-auto sm:w-full"
             />
             <img
               src="https://konzept-weiss.de/cdn/shop/files/konzept_weiss-website_Kunde2_291x_5ac920e3-6ae9-4a7f-8dba-1fb05607eb3b.png?v=1666955683"
               alt="Client 2"
-              className="rounded-lg shadow-md"
+              className="rounded-lg shadow-md w-3/4 mx-auto sm:w-full"
             />
             <img
               src="https://konzept-weiss.de/cdn/shop/files/konzept_weiss-website_Kunde2_291x_5ac920e3-6ae9-4a7f-8dba-1fb05607eb3b.png?v=1666955683"
               alt="Client 3"
-              className="rounded-lg shadow-md"
+              className="rounded-lg shadow-md w-3/4 mx-auto sm:w-full"
             />
             <img
               src="https://konzept-weiss.de/cdn/shop/files/konzept_weiss-website_Kunde2_291x_5ac920e3-6ae9-4a7f-8dba-1fb05607eb3b.png?v=1666955683"
               alt="Client 4"
-              className="rounded-lg shadow-md"
+              className="rounded-lg shadow-md w-3/4 mx-auto sm:w-full"
             />
           </div>
 
