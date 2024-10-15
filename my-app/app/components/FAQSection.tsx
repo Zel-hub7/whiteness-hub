@@ -76,11 +76,11 @@ const FAQSection: React.FC = () => {
           {/* Product Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
             {/* Card 1 */}
-            <div className="bg-green-100 p-6 rounded-lg text-center shadow-md flex flex-col justify-between">
+            <div className="bg-gradient-to-r from-green-200 to-green-100 p-6 rounded-lg text-center shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl flex flex-col justify-between">
               <img
                 src="https://konzept-weiss.de/cdn/shop/files/COLOURCORRECTOR-removebg-preview.png?v=1705600089"
                 alt="Sonic Toothbrush"
-                className="w-24 h-auto mx-auto mb-4"
+                className="w-24 h-auto mx-auto mb-4 transition duration-500 transform hover:scale-110"
               />
               <div className="flex-grow">
                 <h3 className="text-xl font-bold mb-4">
@@ -91,17 +91,17 @@ const FAQSection: React.FC = () => {
                   and effective cleaning of your teeth.
                 </p>
               </div>
-              <button className="bg-green-500 text-white px-4 py-2 rounded-lg mt-auto">
+              <button className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg mt-auto transition duration-300">
                 LEARN MORE
               </button>
             </div>
 
             {/* Card 2 */}
-            <div className="bg-green-100 p-6 rounded-lg text-center shadow-md flex flex-col justify-between">
+            <div className="bg-gradient-to-r from-green-200 to-green-100 p-6 rounded-lg text-center shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl flex flex-col justify-between">
               <img
                 src="https://konzept-weiss.de/cdn/shop/files/COLOURCORRECTOR-removebg-preview.png?v=1705600089"
                 alt="Premium Care Bundle"
-                className="w-24 h-auto mx-auto mb-4"
+                className="w-24 h-auto mx-auto mb-4 transition duration-500 transform hover:scale-110"
               />
               <div className="flex-grow">
                 <h3 className="text-xl font-bold mb-4">PREMIUM CARE BUNDLE+</h3>
@@ -110,17 +110,17 @@ const FAQSection: React.FC = () => {
                   toothbrush and whitening products.
                 </p>
               </div>
-              <button className="bg-green-500 text-white px-4 py-2 rounded-lg mt-auto">
+              <button className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg mt-auto transition duration-300">
                 LEARN MORE
               </button>
             </div>
 
             {/* Card 3 */}
-            <div className="bg-green-100 p-6 rounded-lg text-center shadow-md flex flex-col justify-between">
+            <div className="bg-gradient-to-r from-green-200 to-green-100 p-6 rounded-lg text-center shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl flex flex-col justify-between">
               <img
                 src="https://konzept-weiss.de/cdn/shop/files/COLOURCORRECTOR-removebg-preview.png?v=1705600089"
                 alt="Colour Corrector"
-                className="w-24 h-auto mx-auto mb-4"
+                className="w-24 h-auto mx-auto mb-4 transition duration-500 transform hover:scale-110"
               />
               <div className="flex-grow">
                 <h3 className="text-xl font-bold mb-4">CC+ COLOUR CORRECTOR</h3>
@@ -129,17 +129,17 @@ const FAQSection: React.FC = () => {
                   teeth and brings new shine.
                 </p>
               </div>
-              <button className="bg-green-500 text-white px-4 py-2 rounded-lg mt-auto">
+              <button className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg mt-auto transition duration-300">
                 LEARN MORE
               </button>
             </div>
 
             {/* Card 4 */}
-            <div className="bg-green-100 p-6 rounded-lg text-center shadow-md flex flex-col justify-between">
+            <div className="bg-gradient-to-r from-green-200 to-green-100 p-6 rounded-lg text-center shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl flex flex-col justify-between">
               <img
                 src="https://konzept-weiss.de/cdn/shop/files/COLOURCORRECTOR-removebg-preview.png?v=1705600089"
                 alt="Premium Whitening"
-                className="w-24 h-auto mx-auto mb-4"
+                className="w-24 h-auto mx-auto mb-4 transition duration-500 transform hover:scale-110"
               />
               <div className="flex-grow">
                 <h3 className="text-xl font-bold mb-4">
@@ -150,17 +150,17 @@ const FAQSection: React.FC = () => {
                   after just a few uses.
                 </p>
               </div>
-              <button className="bg-green-500 text-white px-4 py-2 rounded-lg mt-auto">
+              <button className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg mt-auto transition duration-300">
                 LEARN MORE
               </button>
             </div>
 
             {/* Card 5 */}
-            <div className="bg-green-100 p-6 rounded-lg text-center shadow-md flex flex-col justify-between">
+            <div className="bg-gradient-to-r from-green-200 to-green-100 p-6 rounded-lg text-center shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl flex flex-col justify-between">
               <img
                 src="https://konzept-weiss.de/cdn/shop/files/COLOURCORRECTOR-removebg-preview.png?v=1705600089"
                 alt="Coco Crush Toothpaste"
-                className="w-24 h-auto mx-auto mb-4"
+                className="w-24 h-auto mx-auto mb-4 transition duration-500 transform hover:scale-110"
               />
               <div className="flex-grow">
                 <h3 className="text-xl font-bold mb-4">
@@ -170,7 +170,7 @@ const FAQSection: React.FC = () => {
                   Bring the exotic taste of Coco Crush home and treat yourself!
                 </p>
               </div>
-              <button className="bg-green-500 text-white px-4 py-2 rounded-lg mt-auto">
+              <button className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg mt-auto transition duration-300">
                 LEARN MORE
               </button>
             </div>

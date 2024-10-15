@@ -56,17 +56,20 @@ const SmileSection: React.FC = () => {
               Please Smile! 😄
             </h2>
             <p className="text-base sm:text-lg leading-relaxed mb-6 text-gray-700">
-              A beautiful, white smile – and all without painful treatment? We
-              want to make that possible for you. KONZEPT WEISS® forgoes the use
-              of hydrogen peroxide in its tooth-whitening method, thus avoiding
-              pain and side effects. Our tried and tested method brightens your
-              teeth gently, ensuring long-lasting results.
+              Ein schönes, weißes Lächeln – und das ganz ohne schmerzhafte
+              Behandlung? Wir möchten das für Sie möglich machen. KONZEPT WEISS®
+              verzichtet bei seiner Zahnaufhellungsmethode auf die Verwendung
+              von Wasserstoffperoxid und vermeidet dadurch Schmerzen und
+              Nebenwirkungen. Unsere bewährte Methode hellt Ihre Zähne sanft auf
+              und sorgt für langanhaltende Ergebnisse.
             </p>
             <p className="text-base sm:text-lg leading-relaxed text-gray-700">
-              If you still have further questions or concerns, please contact
-              our support team or visit one of our stores. Our staff will gladly
-              answer all your personal questions on-site. You can also find
-              additional information on our website in the FAQ section.
+              Wenn Sie noch weitere Fragen oder Bedenken haben, wenden Sie sich
+              bitte an unser Support-Team oder besuchen Sie eine unserer
+              Filialen. Unser Personal beantwortet Ihnen gerne alle Ihre
+              persönlichen Fragen vor Ort. Sie finden auch zusätzliche
+              Informationen auf unserer Website im FAQ-Bereich, in dem häufig
+              gestellte Fragen beantwortet werden.
             </p>
           </div>
         </div>
