@@ -3,10 +3,8 @@
 import React, { useState } from "react";
 
 const FAQSection: React.FC = () => {
-  // State to track which FAQ is currently expanded
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-  // Function to toggle FAQ items
   const toggleFAQ = (index: number) => {
     if (openIndex === index) {
       setOpenIndex(null); // Close if already open
@@ -15,7 +13,6 @@ const FAQSection: React.FC = () => {
     }
   };
 
-  // List of FAQs
   const faqs = [
     {
       question: "Are there any side effects?",
@@ -23,8 +20,7 @@ const FAQSection: React.FC = () => {
     },
     {
       question: "Is professional teeth whitening necessary?",
-      answer:
-        "Yes, professional teeth whitening provides better results than DIY products.",
+      answer: "Yes, professional teeth whitening provides better results than DIY products.",
     },
     {
       question: "Can crowns, bridges, fillings, or veneers be whitened?",
@@ -32,8 +28,7 @@ const FAQSection: React.FC = () => {
     },
     {
       question: "How white can my teeth get?",
-      answer:
-        "Teeth can be whitened by several shades, depending on the current tooth color.",
+      answer: "Teeth can be whitened by several shades, depending on the current tooth color.",
     },
   ];
 
@@ -76,101 +71,97 @@ const FAQSection: React.FC = () => {
           {/* Product Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
             {/* Card 1 */}
-            <div className="bg-gradient-to-r from-green-200 to-green-100 p-6 rounded-lg text-center shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl flex flex-col justify-between">
+            <div className="bg-gradient-to-br from-gray-800 via-gray-600 to-green-800 p-6 rounded-lg text-center shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl flex flex-col justify-between">
               <img
                 src="https://konzept-weiss.de/cdn/shop/files/COLOURCORRECTOR-removebg-preview.png?v=1705600089"
                 alt="Sonic Toothbrush"
                 className="w-24 h-auto mx-auto mb-4 transition duration-500 transform hover:scale-110"
               />
               <div className="flex-grow">
-                <h3 className="text-xl font-bold mb-4">
+                <h3 className="text-xl font-bold mb-4 text-white">
                   SONIC+ ELECTRIC SONIC TOOTHBRUSH 2.0
                 </h3>
-                <p className="text-gray-600 mb-4">
-                  The Sonic Sonic Toothbrush 2.0 offers you 5 modes for gentle
-                  and effective cleaning of your teeth.
+                <p className="text-gray-300 mb-4">
+                  The Sonic Sonic Toothbrush 2.0 offers you 5 modes for gentle and effective cleaning of your teeth.
                 </p>
               </div>
-              <button className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg mt-auto transition duration-300">
+              <button className="bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded-lg mt-auto transition duration-300">
                 LEARN MORE
               </button>
             </div>
 
             {/* Card 2 */}
-            <div className="bg-gradient-to-r from-green-200 to-green-100 p-6 rounded-lg text-center shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl flex flex-col justify-between">
+            <div className="bg-gradient-to-br from-gray-800 via-gray-600 to-green-800 p-6 rounded-lg text-center shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl flex flex-col justify-between">
               <img
                 src="https://konzept-weiss.de/cdn/shop/files/COLOURCORRECTOR-removebg-preview.png?v=1705600089"
                 alt="Premium Care Bundle"
                 className="w-24 h-auto mx-auto mb-4 transition duration-500 transform hover:scale-110"
               />
               <div className="flex-grow">
-                <h3 className="text-xl font-bold mb-4">PREMIUM CARE BUNDLE+</h3>
-                <p className="text-gray-600 mb-4">
-                  Discover our PREMIUM CARE BUNDLE+ with advanced sonic
-                  toothbrush and whitening products.
+                <h3 className="text-xl font-bold mb-4 text-white">PREMIUM CARE BUNDLE+</h3>
+                <p className="text-gray-300 mb-4">
+                  Discover our PREMIUM CARE BUNDLE+ with advanced sonic toothbrush and whitening products.
                 </p>
               </div>
-              <button className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg mt-auto transition duration-300">
+              <button className="bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded-lg mt-auto transition duration-300">
                 LEARN MORE
               </button>
             </div>
 
             {/* Card 3 */}
-            <div className="bg-gradient-to-r from-green-200 to-green-100 p-6 rounded-lg text-center shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl flex flex-col justify-between">
+            <div className="bg-gradient-to-br from-gray-800 via-gray-600 to-green-800 p-6 rounded-lg text-center shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl flex flex-col justify-between">
               <img
                 src="https://konzept-weiss.de/cdn/shop/files/COLOURCORRECTOR-removebg-preview.png?v=1705600089"
                 alt="Colour Corrector"
                 className="w-24 h-auto mx-auto mb-4 transition duration-500 transform hover:scale-110"
               />
               <div className="flex-grow">
-                <h3 className="text-xl font-bold mb-4">CC+ COLOUR CORRECTOR</h3>
-                <p className="text-gray-600 mb-4">
-                  The CC+ Colour Corrector neutralizes discoloration on your
-                  teeth and brings new shine.
+                <h3 className="text-xl font-bold mb-4 text-white">CC+ COLOUR CORRECTOR</h3>
+                <p className="text-gray-300 mb-4">
+                  The CC+ Colour Corrector neutralizes discoloration on your teeth and brings new shine.
                 </p>
               </div>
-              <button className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg mt-auto transition duration-300">
+              <button className="bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded-lg mt-auto transition duration-300">
                 LEARN MORE
               </button>
             </div>
 
             {/* Card 4 */}
-            <div className="bg-gradient-to-r from-green-200 to-green-100 p-6 rounded-lg text-center shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl flex flex-col justify-between">
+            <div className="bg-gradient-to-br from-gray-800 via-gray-600 to-green-800 p-6 rounded-lg text-center shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl flex flex-col justify-between">
               <img
                 src="https://konzept-weiss.de/cdn/shop/files/COLOURCORRECTOR-removebg-preview.png?v=1705600089"
                 alt="Premium Whitening"
                 className="w-24 h-auto mx-auto mb-4 transition duration-500 transform hover:scale-110"
               />
               <div className="flex-grow">
-                <h3 className="text-xl font-bold mb-4">
+                <h3 className="text-xl font-bold mb-4 text-white">
                   PREMIUM WHITENING TOOTHPASTE+
                 </h3>
-                <p className="text-gray-600 mb-4">
-                  Our activated charcoal toothpaste, fluoride-free! Whitening
-                  after just a few uses.
+                <p className="text-gray-300 mb-4">
+                  Our activated charcoal toothpaste, fluoride-free! Whitening after just a few uses.
                 </p>
               </div>
-              <button className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg mt-auto transition duration-300">
+              <button className="bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded-lg mt-auto transition duration-300">
                 LEARN MORE
               </button>
             </div>
 
             {/* Card 5 */}
-            <div className="bg-gradient-to-r from-green-200 to-green-100 p-6 rounded-lg text-center shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl flex flex-col justify-between">
+            <div className="bg-gradient-to-br from-gray-800 via-gray-600 to-green-800 p-6 rounded-lg text-center shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl flex flex-col justify-between">
               <img
                 src="https://konzept-weiss.de/cdn/shop/files/COLOURCORRECTOR-removebg-preview.png?v=1705600089"
                 alt="Coco Crush Toothpaste"
                 className="w-24 h-auto mx-auto mb-4 transition duration-500 transform hover:scale-110"
               />
               <div className="flex-grow">
-                <h3 className="text-xl font-bold mb-4">
+                <h3 className="text-xl font-bold mb-4 text-white">
                   COCO CRUSH TOOTHPASTE
                 </h3>
-                <p className="text-gray-600 mb-4">
+                <p className="text-gray-300 mb-4">
                   Bring the exotic taste of Coco Crush home and treat yourself!
                 </p>
               </div>
-              <button className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg mt-auto transition duration-300">
+              <button className="bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded-lg mt-auto transition duration-300">
                 LEARN MORE
               </button>
             </div>
