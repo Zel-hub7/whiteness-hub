@@ -7,40 +7,42 @@ const FAQSection: React.FC = () => {
 
   const toggleFAQ = (index: number) => {
     if (openIndex === index) {
-      setOpenIndex(null); // Close if already open
+      setOpenIndex(null); // Schließen, wenn bereits geöffnet
     } else {
-      setOpenIndex(index); // Open the clicked FAQ
+      setOpenIndex(index); // Klicken, um zu öffnen
     }
   };
 
   const faqs = [
     {
-      question: "Are there any side effects?",
-      answer: "No, there are no known side effects.",
+      question: "Gibt es Nebenwirkungen?",
+      answer: "Nein, es sind keine bekannten Nebenwirkungen bekannt.",
     },
     {
-      question: "Is professional teeth whitening necessary?",
-      answer: "Yes, professional teeth whitening provides better results than DIY products.",
+      question: "Ist eine professionelle Zahnaufhellung notwendig?",
+      answer:
+        "Ja, professionelle Zahnaufhellung liefert bessere Ergebnisse als DIY-Produkte.",
     },
     {
-      question: "Can crowns, bridges, fillings, or veneers be whitened?",
-      answer: "No, these materials cannot be whitened through bleaching.",
+      question: "Können Kronen, Brücken, Füllungen oder Veneers aufgehellt werden?",
+      answer: "Nein, diese Materialien können durch Bleichmittel nicht aufgehellt werden.",
     },
     {
-      question: "How white can my teeth get?",
-      answer: "Teeth can be whitened by several shades, depending on the current tooth color.",
+      question: "Wie weiß können meine Zähne werden?",
+      answer:
+        "Die Zähne können je nach aktueller Zahnfarbe um mehrere Farbtöne aufgehellt werden.",
     },
   ];
 
   return (
     <div className="bg-gray-100 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* FAQ Title */}
+        {/* FAQ-Titel */}
         <h2 className="text-3xl font-bold mb-8 text-center">
-          Your Questions. Our Answers.
+          Ihre Fragen. Unsere Antworten.
         </h2>
 
-        {/* FAQ Items */}
+        {/* FAQ-Elemente */}
         <div className="bg-white rounded-lg shadow-md p-6">
           {faqs.map((faq, index) => (
             <div key={index} className="mb-4 border-b last:border-none">
@@ -60,109 +62,113 @@ const FAQSection: React.FC = () => {
           ))}
         </div>
 
-        {/* Product Section with Images */}
+        {/* Produktsektion mit Bildern */}
         <div className="mt-16 text-center">
-          {/* Title */}
+          {/* Titel */}
           <h2 className="text-4xl font-bold mb-2">
-            Extend Your Whitening Results
+            Verlängern Sie Ihre Aufhellungsergebnisse
           </h2>
-          <p className="text-lg mb-8">Discover our care products</p>
+          <p className="text-lg mb-8">Entdecken Sie unsere Pflegeprodukte</p>
 
-          {/* Product Cards */}
+          {/* Produktkarten */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
-            {/* Card 1 */}
+            {/* Karte 1 (Bild getauscht mit Karte 4) */}
             <div className="bg-gradient-to-br from-gray-800 via-gray-600 to-green-800 p-6 rounded-lg text-center shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl flex flex-col justify-between">
               <img
-                src="https://konzept-weiss.de/cdn/shop/files/COLOURCORRECTOR-removebg-preview.png?v=1705600089"
-                alt="Sonic Toothbrush"
+                src="https://konzept-weiss.de/cdn/shop/files/image_2022_04_27T14_08_11_984Z.png?v=1651068788"
+                alt="Elektrische Zahnbürste"
+                className="w-8 h-auto mx-auto mb-4 transition duration-500 transform hover:scale-110"
+              />
+              <div className="flex-grow">
+                <h3 className="text-xl font-bold mb-4 text-white">
+                  SONIC+ ELEKTRISCHE SCHALLZAHNBÜRSTE 2.0
+                </h3>
+                <p className="text-gray-300 mb-4">
+                  Die Sonic+ Schallzahnbürste 2.0 bietet Ihnen 5 Modi für eine sanfte und effektive Reinigung Ihrer Zähne.
+                </p>
+              </div>
+              <button className="bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded-lg mt-auto transition duration-300">
+                MEHR ERFAHREN
+              </button>
+            </div>
+
+            {/* Karte 2 (Bild getauscht mit Karte 5) */}
+            <div className="bg-gradient-to-br from-gray-800 via-gray-600 to-green-800 p-6 rounded-lg text-center shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl flex flex-col justify-between">
+              <img
+                src="https://konzept-weiss.de/cdn/shop/files/Premium_Care_Bundle.png?v=1718298656"
+                alt="Premium-Pflegepaket"
                 className="w-24 h-auto mx-auto mb-4 transition duration-500 transform hover:scale-110"
               />
               <div className="flex-grow">
                 <h3 className="text-xl font-bold mb-4 text-white">
-                  SONIC+ ELECTRIC SONIC TOOTHBRUSH 2.0
+                  PREMIUM CARE BUNDLE+
                 </h3>
                 <p className="text-gray-300 mb-4">
-                  The Sonic Sonic Toothbrush 2.0 offers you 5 modes for gentle and effective cleaning of your teeth.
+                  Entdecken Sie unser PREMIUM CARE BUNDLE+ mit fortschrittlicher Schallzahnbürste und Aufhellungsprodukten.
                 </p>
               </div>
               <button className="bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded-lg mt-auto transition duration-300">
-                LEARN MORE
+                MEHR ERFAHREN
               </button>
             </div>
 
-            {/* Card 2 */}
+            {/* Karte 3 (Keine Änderung) */}
             <div className="bg-gradient-to-br from-gray-800 via-gray-600 to-green-800 p-6 rounded-lg text-center shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl flex flex-col justify-between">
               <img
                 src="https://konzept-weiss.de/cdn/shop/files/COLOURCORRECTOR-removebg-preview.png?v=1705600089"
-                alt="Premium Care Bundle"
-                className="w-24 h-auto mx-auto mb-4 transition duration-500 transform hover:scale-110"
-              />
-              <div className="flex-grow">
-                <h3 className="text-xl font-bold mb-4 text-white">PREMIUM CARE BUNDLE+</h3>
-                <p className="text-gray-300 mb-4">
-                  Discover our PREMIUM CARE BUNDLE+ with advanced sonic toothbrush and whitening products.
-                </p>
-              </div>
-              <button className="bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded-lg mt-auto transition duration-300">
-                LEARN MORE
-              </button>
-            </div>
-
-            {/* Card 3 */}
-            <div className="bg-gradient-to-br from-gray-800 via-gray-600 to-green-800 p-6 rounded-lg text-center shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl flex flex-col justify-between">
-              <img
-                src="https://konzept-weiss.de/cdn/shop/files/COLOURCORRECTOR-removebg-preview.png?v=1705600089"
-                alt="Colour Corrector"
-                className="w-24 h-auto mx-auto mb-4 transition duration-500 transform hover:scale-110"
-              />
-              <div className="flex-grow">
-                <h3 className="text-xl font-bold mb-4 text-white">CC+ COLOUR CORRECTOR</h3>
-                <p className="text-gray-300 mb-4">
-                  The CC+ Colour Corrector neutralizes discoloration on your teeth and brings new shine.
-                </p>
-              </div>
-              <button className="bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded-lg mt-auto transition duration-300">
-                LEARN MORE
-              </button>
-            </div>
-
-            {/* Card 4 */}
-            <div className="bg-gradient-to-br from-gray-800 via-gray-600 to-green-800 p-6 rounded-lg text-center shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl flex flex-col justify-between">
-              <img
-                src="https://konzept-weiss.de/cdn/shop/files/COLOURCORRECTOR-removebg-preview.png?v=1705600089"
-                alt="Premium Whitening"
+                alt="Farbkorrektur"
                 className="w-24 h-auto mx-auto mb-4 transition duration-500 transform hover:scale-110"
               />
               <div className="flex-grow">
                 <h3 className="text-xl font-bold mb-4 text-white">
-                  PREMIUM WHITENING TOOTHPASTE+
+                  CC+ FARBKORREKTUR
                 </h3>
                 <p className="text-gray-300 mb-4">
-                  Our activated charcoal toothpaste, fluoride-free! Whitening after just a few uses.
+                  Der CC+ Farbkorrektor neutralisiert Verfärbungen Ihrer Zähne und bringt neuen Glanz.
                 </p>
               </div>
               <button className="bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded-lg mt-auto transition duration-300">
-                LEARN MORE
+                MEHR ERFAHREN
               </button>
             </div>
 
-            {/* Card 5 */}
+            {/* Karte 4 (Bild getauscht mit Karte 1) */}
             <div className="bg-gradient-to-br from-gray-800 via-gray-600 to-green-800 p-6 rounded-lg text-center shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl flex flex-col justify-between">
               <img
-                src="https://konzept-weiss.de/cdn/shop/files/COLOURCORRECTOR-removebg-preview.png?v=1705600089"
-                alt="Coco Crush Toothpaste"
+                src="https://konzept-weiss.de/cdn/shop/files/ZAHNPASTA_NEU_8bbffb13-be30-42ce-b4ed-82940d019114.png?v=1666893600"
+                alt="Premium Whitening Zahnpasta"
                 className="w-24 h-auto mx-auto mb-4 transition duration-500 transform hover:scale-110"
               />
               <div className="flex-grow">
                 <h3 className="text-xl font-bold mb-4 text-white">
-                  COCO CRUSH TOOTHPASTE
+                  PREMIUM WHITENING ZAHNPASTA+
                 </h3>
                 <p className="text-gray-300 mb-4">
-                  Bring the exotic taste of Coco Crush home and treat yourself!
+                  Unsere Zahnpasta mit Aktivkohle, ohne Fluorid! Aufhellung nach nur wenigen Anwendungen.
                 </p>
               </div>
               <button className="bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded-lg mt-auto transition duration-300">
-                LEARN MORE
+                MEHR ERFAHREN
+              </button>
+            </div>
+
+            {/* Karte 5 (Bild getauscht mit Karte 2) */}
+            <div className="bg-gradient-to-br from-gray-800 via-gray-600 to-green-800 p-6 rounded-lg text-center shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl flex flex-col justify-between">
+              <img
+                src="https://konzept-weiss.de/cdn/shop/files/file.png?v=1718298472"
+                alt="Coco Crush Zahnpasta"
+                className="w-24 h-auto mx-auto mb-4 transition duration-500 transform hover:scale-110"
+              />
+              <div className="flex-grow">
+                <h3 className="text-xl font-bold mb-4 text-white">
+                  COCO CRUSH ZAHNPASTA
+                </h3>
+                <p className="text-gray-300 mb-4">
+                  Bringen Sie den exotischen Geschmack von Coco Crush nach Hause und gönnen Sie sich etwas Besonderes!
+                </p>
+              </div>
+              <button className="bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded-lg mt-auto transition duration-300">
+                MEHR ERFAHREN
               </button>
             </div>
           </div>
