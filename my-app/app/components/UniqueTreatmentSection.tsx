@@ -3,28 +3,30 @@ import React from "react";
 const UniqueTreatmentSection: React.FC = () => {
   return (
     <div>
-      {/* Concept Weiss Section (Keep this unchanged) */}
+      {/* Concept Weiss Section*/}
       <div className="bg-white text-black py-16 m-6 rounded-lg shadow-xl">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center bg-gray-50 rounded-lg shadow-lg p-10">
           {/* Title */}
-          <h2 className="text-5xl k font-extrabold mb-8">
+          <h2 className="text-6xl font-extrabold mb-8 tracking-tight leading-tight text-gray-900">
             CONCEPT WEISS
           </h2>
 
           {/* Paragraph */}
-          <p className="text-lg leading-relaxed text-black font-medium tracking-wide">
+          <p className="text-lg sm:text-xl leading-relaxed text-black tracking-wider max-w-3xl mx-auto">
             Jede Behandlung beginnt mit einer individuellen Beratung, bei der
             Sie über jeden Schritt informiert werden und all Ihre Fragen
             beantwortet werden. Die von Zahnärzten empfohlene Bleaching-Methode
-            ist sanft, schmerzfrei und langanhaltend. Der Grund dafür? Das
-            CONCEPT WEISS® Master Gel enthält kein Wasserstoffperoxid oder
-            andere schädliche Inhaltsstoffe. Das wirksame Ergebnis wurde von 95
-            % der Anwender bestätigt, die eine Zahnaufhellung um bis zu 10
-            Farbstufen ohne Schmerzen oder Nebenwirkungen erreicht haben.
+            ist sanft, schmerzfrei und langanhaltend. Der Grund dafür? Das{" "}
+            <span className="font-semibold">CONCEPT WEISS® Master Gel</span>{" "}
+            enthält kein Wasserstoffperoxid oder andere schädliche
+            Inhaltsstoffe. Das wirksame Ergebnis wurde von{" "}
+            <span className="font-semibold">95 %</span> der Anwender bestätigt,
+            die eine Zahnaufhellung um bis zu{" "}
+            <span className="font-semibold">10 Farbstufen</span> ohne Schmerzen
+            oder Nebenwirkungen erreicht haben.
           </p>
         </div>
       </div>
-
 
       <div className="bg-gradient-to-br from-black via-gray-800 to-gray-900 text-white py-16 m-6">
         {/* Common Container */}
