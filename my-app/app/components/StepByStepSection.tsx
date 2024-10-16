@@ -11,7 +11,7 @@ const StepByStepSection: React.FC = () => {
       id: 1,
       title: 'Beratung Vor Ort',
       description:
-        'Gemeinsam mit einem unserer WEISS-Experten finden Sie heraus, welches Paket am besten zu Ihnen und Ihren Zähnen passt. Die Beratung wird individuell auf Sie zugeschnitten, und basierend auf der aktuellen Zahnfarbe können Sie entscheiden, welches Bleaching-Paket Ihre Erwartungen und Wünsche erfüllt. Alle Ihre persönlichen Fragen werden hier beantwortet.',
+        'Zusammen mit einem WEISS-Experten finden Sie das passende Bleaching-Paket für Ihre Zane.',
       icon: '🖥️',
     },
     {

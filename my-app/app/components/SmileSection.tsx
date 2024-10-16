@@ -1,6 +1,8 @@
 import React from "react";
 import Image from 'next/image'; // Import Next.js Image component
 import SmilingWoman from '../assets/images/smiling-woman.jpg'; // Import the image
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTooth, faFaceSmile, faShieldAlt, faCalendar } from '@fortawesome/free-solid-svg-icons'; // FontAwesome icons
 
 const SmileSection: React.FC = () => {
   return (
@@ -8,29 +10,33 @@ const SmileSection: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Top Icons Section */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-          <div className="bg-white p-6 rounded-lg text-center shadow-md">
-            <span className="text-4xl">✨</span>
+          {/* Each card has a light gradient and hover effect */}
+          <div className="bg-gradient-to-br from-white to-gray-200 p-6 rounded-lg text-center shadow-md h-64 w-56 flex flex-col justify-center items-center transition-transform transform hover:scale-105 hover:shadow-xl">
+            <FontAwesomeIcon icon={faFaceSmile} size="4x" className="text-yellow-500 mb-4" />
             <h3 className="text-xl font-bold mt-4">Strahlendes Lächeln</h3>
             <p className="text-gray-600 mt-2">
               Aufhellung um bis zu 10 Farbstufen in nur einer Sitzung.
             </p>
           </div>
-          <div className="bg-white p-6 rounded-lg text-center shadow-md">
-            <span className="text-4xl">🦷</span>
+
+          <div className="bg-gradient-to-br from-white to-gray-200 p-6 rounded-lg text-center shadow-md h-64 w-56 flex flex-col justify-center items-center transition-transform transform hover:scale-105 hover:shadow-xl">
+            <FontAwesomeIcon icon={faTooth} size="4x" className="text-blue-500 mb-4" />
             <h3 className="text-xl font-bold mt-4">Eine Behandlung</h3>
             <p className="text-gray-600 mt-2">
               Sie benötigen nur eine Behandlung für Ihr weißes Lächeln.
             </p>
           </div>
-          <div className="bg-white p-6 rounded-lg text-center shadow-md">
-            <span className="text-4xl">❌</span>
+
+          <div className="bg-gradient-to-br from-white to-gray-200 p-6 rounded-lg text-center shadow-md h-64 w-56 flex flex-col justify-center items-center transition-transform transform hover:scale-105 hover:shadow-xl">
+            <FontAwesomeIcon icon={faShieldAlt} size="4x" className="text-red-500 mb-4" />
             <h3 className="text-xl font-bold mt-4">Keine Nebenwirkungen</h3>
             <p className="text-gray-600 mt-2">
               Ihre Zähne werden nicht beschädigt, und die Behandlung ist schmerzfrei.
             </p>
           </div>
-          <div className="bg-white p-6 rounded-lg text-center shadow-md">
-            <span className="text-4xl">📅</span>
+
+          <div className="bg-gradient-to-br from-white to-gray-200 p-6 rounded-lg text-center shadow-md h-64 w-56 flex flex-col justify-center items-center transition-transform transform hover:scale-105 hover:shadow-xl">
+            <FontAwesomeIcon icon={faCalendar} size="4x" className=" mb-4" />
             <h3 className="text-xl font-bold mt-4">Lang anhaltend</h3>
             <p className="text-gray-600 mt-2">
               Unsere Aufhellung hält bis zu 12 Monate.
@@ -43,9 +49,9 @@ const SmileSection: React.FC = () => {
           {/* Image */}
           <div className="flex justify-center lg:justify-end">
             <Image
-              src={SmilingWoman}
+              src={SmilingWoman} // Use the imported image with the Image component
               alt="Smiling Woman"
-              width={370} 
+              width={375} // Add width and height properties for the image
               height={400}
               className="rounded-lg shadow-lg transform transition duration-300 hover:scale-105"
             />
