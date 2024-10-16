@@ -57,7 +57,7 @@ const StepByStepSection: React.FC = () => {
   };
 
   return (
-    <div className="bg-gray-900 py-16">
+    <div className="bg-gray-900 py-16 m-6">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Title */}
         <h2 className="text-5xl font-bold text-white mb-8">
