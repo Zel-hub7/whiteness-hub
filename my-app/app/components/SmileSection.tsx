@@ -12,7 +12,7 @@ const SmileSection: React.FC = () => {
         <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {/* Each card has a light gradient and hover effect */}
           <div className="bg-gradient-to-br from-white to-gray-200 p-4 rounded-lg text-center shadow-md h-48 w-full flex flex-col justify-center items-center transition-transform transform hover:scale-105 hover:shadow-xl">
-            <FontAwesomeIcon icon={faFaceSmile} size="2x" className="text-yellow-500 mb-4" /> {/* Adjusted icon size */}
+            <FontAwesomeIcon icon={faFaceSmile} size="2x" className="text-yellow-500 mb-4" /> 
             <h3 className="text-lg font-bold mt-4">Strahlendes Lächeln</h3>
             <p className="text-gray-600 mt-2 text-sm">
               Aufhellung um bis zu 10 Farbstufen in nur einer Sitzung.
@@ -49,9 +49,9 @@ const SmileSection: React.FC = () => {
           {/* Image */}
           <div className="flex justify-center lg:justify-end">
             <Image
-              src={SmilingWoman} // Use the imported image with the Image component
+              src={SmilingWoman}
               alt="Smiling Woman"
-              width={300} // Adjusted width and height for better mobile responsiveness
+              width={300} 
               height={350}
               className="rounded-lg shadow-lg transform transition duration-300 hover:scale-105"
             />
