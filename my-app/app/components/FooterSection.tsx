@@ -1,6 +1,13 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faPaypal,
+  faCcVisa,
+  faCcMastercard,
+  faCcAmex,
+} from "@fortawesome/free-brands-svg-icons";
 
 const FooterSection: React.FC = () => {
   const [isShopOpen, setIsShopOpen] = useState(false);
@@ -15,7 +22,8 @@ const FooterSection: React.FC = () => {
           <div className="text-center">
             <h2 className="text-3xl font-bold">Immer aktuell dabei!</h2>
             <p className="text-gray-300">
-              Trage Dich jetzt für unseren Newsletter ein und verpasse keine Angebote mehr.
+              Trage Dich jetzt für unseren Newsletter ein und verpasse keine
+              Angebote mehr.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 w-full max-w-sm">
@@ -30,8 +38,11 @@ const FooterSection: React.FC = () => {
           </div>
         </div>
         <div className="max-w-7xl mx-auto mt-4 text-center text-sm text-gray-400">
-          Mit der Anmeldung zum Newsletter stimmst du den{' '}
-          <a href="#" className="text-green-500 underline hover:text-green-400">Datenschutzbestimmungen</a> zu.
+          Mit der Anmeldung zum Newsletter stimmst du den{" "}
+          <a href="#" className="text-green-500 underline hover:text-green-400">
+            Datenschutzbestimmungen
+          </a>{" "}
+          zu.
         </div>
       </div>
 
@@ -45,28 +56,76 @@ const FooterSection: React.FC = () => {
             onClick={() => setIsShopOpen(!isShopOpen)}
           >
             <span>SHOP</span>
-            <span>{isShopOpen ? '▲' : '▼'}</span>
+            <span>{isShopOpen ? "▲" : "▼"}</span>
           </button>
           {isShopOpen && (
             <ul className="text-gray-400 space-y-2 sm:hidden">
-              <li><a href="#" className="hover:text-white">Bestseller</a></li>
-              <li><a href="#" className="hover:text-white">Bundles & Sets</a></li>
-              <li><a href="#" className="hover:text-white">Geschenkkarten</a></li>
-              <li><a href="#" className="hover:text-white">Alle Produkte</a></li>
-              <li><a href="#" className="hover:text-white">FAQ</a></li>
-              <li><a href="#" className="hover:text-white">Hilfe & Kontakt</a></li>
+              <li>
+                <a href="#" className="hover:text-white">
+                  Bestseller
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white">
+                  Bundles & Sets
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white">
+                  Geschenkkarten
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white">
+                  Alle Produkte
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white">
+                  FAQ
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white">
+                  Hilfe & Kontakt
+                </a>
+              </li>
             </ul>
           )}
           {/* Larger Screens (static list) */}
           <div className="hidden sm:block">
             <h3 className="text-white font-bold mb-4">SHOP</h3>
             <ul className="text-gray-400 space-y-2">
-              <li><a href="#" className="hover:text-white">Bestseller</a></li>
-              <li><a href="#" className="hover:text-white">Bundles & Sets</a></li>
-              <li><a href="#" className="hover:text-white">Geschenkkarten</a></li>
-              <li><a href="#" className="hover:text-white">Alle Produkte</a></li>
-              <li><a href="#" className="hover:text-white">FAQ</a></li>
-              <li><a href="#" className="hover:text-white">Hilfe & Kontakt</a></li>
+              <li>
+                <a href="#" className="hover:text-white">
+                  Bestseller
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white">
+                  Bundles & Sets
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white">
+                  Geschenkkarten
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white">
+                  Alle Produkte
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white">
+                  FAQ
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white">
+                  Hilfe & Kontakt
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -79,26 +138,66 @@ const FooterSection: React.FC = () => {
             onClick={() => setIsStoreOpen(!isStoreOpen)}
           >
             <span>STORE</span>
-            <span>{isStoreOpen ? '▲' : '▼'}</span>
+            <span>{isStoreOpen ? "▲" : "▼"}</span>
           </button>
           {isStoreOpen && (
             <ul className="text-gray-400 space-y-2 sm:hidden">
-              <li><a href="#" className="hover:text-white">Standorte</a></li>
-              <li><a href="#" className="hover:text-white">Behandlungsprozess</a></li>
-              <li><a href="#" className="hover:text-white">Kunden & Ergebnisse</a></li>
-              <li><a href="#" className="hover:text-white">Hilfe & Kontakt</a></li>
-              <li><a href="#" className="hover:text-white">Offene Stellen</a></li>
+              <li>
+                <a href="#" className="hover:text-white">
+                  Standorte
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white">
+                  Behandlungsprozess
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white">
+                  Kunden & Ergebnisse
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white">
+                  Hilfe & Kontakt
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white">
+                  Offene Stellen
+                </a>
+              </li>
             </ul>
           )}
           {/* Larger Screens (static list) */}
           <div className="hidden sm:block">
             <h3 className="text-white font-bold mb-4">STORE</h3>
             <ul className="text-gray-400 space-y-2">
-              <li><a href="#" className="hover:text-white">Standorte</a></li>
-              <li><a href="#" className="hover:text-white">Behandlungsprozess</a></li>
-              <li><a href="#" className="hover:text-white">Kunden & Ergebnisse</a></li>
-              <li><a href="#" className="hover:text-white">Hilfe & Kontakt</a></li>
-              <li><a href="#" className="hover:text-white">Offene Stellen</a></li>
+              <li>
+                <a href="#" className="hover:text-white">
+                  Standorte
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white">
+                  Behandlungsprozess
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white">
+                  Kunden & Ergebnisse
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white">
+                  Hilfe & Kontakt
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white">
+                  Offene Stellen
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -111,28 +210,76 @@ const FooterSection: React.FC = () => {
             onClick={() => setIsLegalOpen(!isLegalOpen)}
           >
             <span>RECHTLICHES</span>
-            <span>{isLegalOpen ? '▲' : '▼'}</span>
+            <span>{isLegalOpen ? "▲" : "▼"}</span>
           </button>
           {isLegalOpen && (
             <ul className="text-gray-400 space-y-2 sm:hidden">
-              <li><a href="#" className="hover:text-white">Datenschutz</a></li>
-              <li><a href="#" className="hover:text-white">Impressum</a></li>
-              <li><a href="#" className="hover:text-white">Widerrufsbelehrung</a></li>
-              <li><a href="#" className="hover:text-white">Geld-zurück-Garantie</a></li>
-              <li><a href="#" className="hover:text-white">AGB Shop</a></li>
-              <li><a href="#" className="hover:text-white">AGB Store</a></li>
+              <li>
+                <a href="#" className="hover:text-white">
+                  Datenschutz
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white">
+                  Impressum
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white">
+                  Widerrufsbelehrung
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white">
+                  Geld-zurück-Garantie
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white">
+                  AGB Shop
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white">
+                  AGB Store
+                </a>
+              </li>
             </ul>
           )}
           {/* Larger Screens (static list) */}
           <div className="hidden sm:block">
             <h3 className="text-white font-bold mb-4">RECHTLICHES</h3>
             <ul className="text-gray-400 space-y-2">
-              <li><a href="#" className="hover:text-white">Datenschutz</a></li>
-              <li><a href="#" className="hover:text-white">Impressum</a></li>
-              <li><a href="#" className="hover:text-white">Widerrufsbelehrung</a></li>
-              <li><a href="#" className="hover:text-white">Geld-zurück-Garantie</a></li>
-              <li><a href="#" className="hover:text-white">AGB Shop</a></li>
-              <li><a href="#" className="hover:text-white">AGB Store</a></li>
+              <li>
+                <a href="#" className="hover:text-white">
+                  Datenschutz
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white">
+                  Impressum
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white">
+                  Widerrufsbelehrung
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white">
+                  Geld-zurück-Garantie
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white">
+                  AGB Shop
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white">
+                  AGB Store
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -143,11 +290,38 @@ const FooterSection: React.FC = () => {
         <div>
           <p>&copy; 2024 Konzept Weiss. Alle Rechte vorbehalten.</p>
         </div>
-        <div className="flex justify-center items-center space-x-4">
-          <img src="https://cdn.shopify.com/s/files/1/0592/1384/0583/files/Zahlungsmethoden.png?v=1698228258" alt="PayPal" className="w-12 h-auto" />
-          <img src="https://cdn.shopify.com/s/files/1/0592/1384/0583/files/Zahlungsmethoden.png?v=1698228258" alt="Visa" className="w-12 h-auto" />
-          <img src="https://cdn.shopify.com/s/files/1/0592/1384/0583/files/Zahlungsmethoden.png?v=1698228258" alt="MasterCard" className="w-12 h-auto" />
-          <img src="https://cdn.shopify.com/s/files/1/0592/1384/0583/files/Zahlungsmethoden.png?v=1698228258" alt="American Express" className="w-12 h-auto" />
+        <div className="flex justify-center items-center space-x-6">
+          {/* PayPal Icon */}
+          <FontAwesomeIcon
+            icon={faPaypal}
+            className="text-5xl"
+            style={{ color: "#003087" }} // PayPal brand color
+            title="PayPal"
+          />
+
+          {/* Visa Icon */}
+          <FontAwesomeIcon
+            icon={faCcVisa}
+            className="text-5xl"
+            style={{ color: "#1a1f71" }} // Visa brand color
+            title="Visa"
+          />
+
+          {/* MasterCard Icon */}
+          <FontAwesomeIcon
+            icon={faCcMastercard}
+            className="text-5xl"
+            style={{ color: "#EB001B" }} // MasterCard brand color (red)
+            title="MasterCard"
+          />
+
+          {/* American Express Icon */}
+          <FontAwesomeIcon
+            icon={faCcAmex}
+            className="text-5xl"
+            style={{ color: "#0070ba" }} // American Express brand color
+            title="American Express"
+          />
         </div>
       </div>
     </div>
